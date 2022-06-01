@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using AutoMapper;
 
-namespace Task.Application.Common.Mapping
+namespace Tasks.Application.Common.Mapping
 {
     public class AssemblyMappingProfile : Profile
     {

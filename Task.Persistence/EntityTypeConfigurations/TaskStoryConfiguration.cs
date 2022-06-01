@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Task.Domain;
+using Tasks.Domain;
 namespace Tasks.Persistence.EntityTypeConfigurations
 {
     public class TaskStoryConfiguration : IEntityTypeConfiguration<TaskStory>

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
-using Task.Domain;
-using Task.Persistence.EntityTypeConfigurations;
+using Tasks.Domain;
+using Tasks.Persistence.EntityTypeConfigurations;
 using Tasks.Application.Interfaces;
 
 
@@ -9,7 +9,7 @@ namespace Tasks.Persistence
 {
     public class TasksDbContext : DbContext, ITaskDbContext
     {
-        public DbSet<Task.Domain.Task> Tasks { get; set; }
+        public DbSet<Tasks.Domain.Task> Tasks { get; set; }
    
         public TasksDbContext(DbContextOptions<TasksDbContext> options)
             : base(options) { }

@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MediatR;
 
-namespace Tasks.Domain
+namespace Tasks.Application.Task.Commands.CreateTask
 {
-    public class Task
+    public class CrateTaskCommand : IRequest<Guid>
     {
-        public Guid Id { get; set; }
         public Guid UserId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime Created_Date { get; set; }
-        public DateTime Modified_Date { get; set; }
         public DateTime Due_Date { get; set; }
-       
     }
 }

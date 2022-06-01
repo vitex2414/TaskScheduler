@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Task.Domain;
-namespace Task.Persistence.EntityTypeConfigurations
+using Tasks.Domain;
+namespace Tasks.Persistence.EntityTypeConfigurations
 {
-    public class TaskConfiguration : IEntityTypeConfiguration<Task.Domain.Task>
+    public class TaskConfiguration : IEntityTypeConfiguration<Tasks.Domain.Task>
     {
-       public void Configure(EntityTypeBuilder<Task.Domain.Task> builder)
+       public void Configure(EntityTypeBuilder<Tasks.Domain.Task> builder)
         {
             builder.HasKey(task => task.Id);
             builder.HasIndex(task => task.Id).IsUnique();

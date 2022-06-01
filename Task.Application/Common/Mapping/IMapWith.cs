@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace Task.Application.Common.Mapping
+namespace Tasks.Application.Common.Mapping
 {
    public interface IMapWith<T>
     {

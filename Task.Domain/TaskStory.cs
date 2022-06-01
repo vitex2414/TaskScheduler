@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task.Domain
+namespace Tasks.Domain
 {
     public class TaskStory
     {
